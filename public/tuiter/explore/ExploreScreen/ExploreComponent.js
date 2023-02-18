@@ -29,7 +29,7 @@ function ExploreComponent() {
             <a class="nav-link" href="entertainment.html">Entertainment</a>
         </li>
     </ul>
-    <div class="position-relative">
+    <div class="position-relative mb-2">
         <img src="../starship.webp" class="col-12" />
         <div class="position-absolute bottom-0 text-white image-text fw-bold">
             SpaceX's Starship
