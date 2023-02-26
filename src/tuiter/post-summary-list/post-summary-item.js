@@ -1,20 +1,20 @@
 const PostSummaryItem = (props) => {
   const { post } = props;
   return (
-    <li class="list-group-item post-text">
-      <div class="row">
-        <div class="col-10">
-          <div class="post-text-side">{post.topic}</div>
+    <li className="list-group-item post-text">
+      <div className="row">
+        <div className="col-10">
+          <div className="post-text-side">{post.topic}</div>
           <div>
-            <span class="fw-bold">
-              {post.userName} <i class="fa-solid fa-circle-check"></i>
+            <span className="fw-bold">
+              {post.userName} <i className="fa-solid fa-circle-check"></i>
             </span>
-            <span class="post-text-side"> - {post.time}</span>
+            <span className="post-text-side"> - {post.time}</span>
           </div>
-          <div class="fw-bold">{post.title}</div>
+          <div className="fw-bold">{post.title}</div>
         </div>
-        <div class="col-2">
-          <img class="col-12" src={post.image} />
+        <div className="col-2">
+          <img className="col-12" src={`/images/${post.image}`} />
         </div>
       </div>
     </li>

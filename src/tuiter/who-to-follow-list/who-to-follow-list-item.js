@@ -7,7 +7,7 @@ const WhoToFollowListItem = ({
       <div className="row d-flex align-items-center">
         <div className="col-2">
           <img
-            src={`${who.avatarIcon}`}
+            src={`/images/${who.avatarIcon}`}
             className="col-12 p-0 rounded-circle"
           />
         </div>
