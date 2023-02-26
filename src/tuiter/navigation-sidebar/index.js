@@ -10,8 +10,9 @@ const NavigationSidebar = ({ active = "home" }) => {
       </a>
       <a
         className={`list-group-item ${isActive("home")} list-group-item-action`}
+      >
         Home
-      ></a>
+      </a>
       <a
         className={`list-group-item ${isActive(
           "explore"
