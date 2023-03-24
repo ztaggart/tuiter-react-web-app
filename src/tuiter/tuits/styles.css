@@ -1,0 +1,53 @@
+/* * {
+  color: white;
+  background-color: black;
+  border-color: rgb(47, 51, 54);
+  font-family: Arial, Helvetica, sans-serif;
+} */
+
+.wd-main {
+  margin: 8px;
+  border: 1px solid rgb(47, 51, 54);
+}
+
+.wd-rounded {
+  border-radius: 50px;
+}
+
+.wd-inline-block {
+  display: inline-block;
+}
+
+.wd-post-ellipses {
+  text-decoration: none;
+  float: right;
+  font-size: 20px;
+  font-weight: 550;
+}
+
+.wd-post-text-author {
+  font-weight: 550;
+}
+
+.wd-post {
+  border: 1px solid rgb(100, 118, 125);
+  overflow: hidden;
+  padding: 16px;
+}
+
+.wd-post-text {
+  font-size: 15px;
+  margin-top: 5px;
+  margin-bottom: 6px;
+}
+
+.wd-post-text-side {
+  margin: 0px;
+  color: rgb(100, 118, 125);
+  font-size: 13px;
+  font-weight: initial;
+}
+
+.wd-bookmark-highlight {
+  color: red;
+}

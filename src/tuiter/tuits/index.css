@@ -1,0 +1,74 @@
+.wd-title {
+  font-size: 20px;
+  font-weight: 550;
+  margin-bottom: 2px;
+}
+
+.wd-title-ellipses {
+  color: rgb(29, 161, 242);
+  float: right;
+  text-decoration: none;
+  margin-bottom: 0px;
+}
+
+.wd-title-content {
+  margin-left: 16px;
+  margin: 16px 12px 12px;
+}
+
+.wd-img-profile {
+  height: 48px;
+  width: 48px;
+}
+
+.wd-div-profile {
+  padding-right: 10px;
+  float: left;
+}
+
+.wd-bookmarked-post {
+  width: 90%;
+  float: left;
+  max-width: 506px;
+}
+
+.wd-bookmarked-post-linked {
+  margin-top: 12px;
+}
+
+.wd-bookmarked-post-linked-img {
+  width: 504px;
+  height: 264px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border: 1px solid rgb(47, 51, 54);
+}
+
+.wd-bookmarked-post-linked-content {
+  padding: 12px;
+  border: 1px solid rgb(47, 51, 54);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.wd-bookmarked-post-linked-title {
+  font-size: 15px;
+  color: white;
+}
+
+.wd-bookmarked-post-linked-body {
+  color: rgb(100, 118, 125);
+}
+
+.wd-post-title-text {
+  font-size: 15px;
+  color: rgb(100, 118, 125);
+}
+
+.wd-bookmarked-post-icons {
+  justify-content: space-between;
+  display: flex;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  width: 90%;
+}

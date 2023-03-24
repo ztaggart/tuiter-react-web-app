@@ -1,15 +1,19 @@
 import React from "react";
-const NavigationSidebar = ({ active = "home" }) => {
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDove } from "@fortawesome/free-solid-svg-icons";
+const NavigationSidebar = ({ page }) => {
   const isActive = (name) => {
-    return active === name ? "active" : "";
+    return page === name ? "active" : "";
   };
+  console.log(page);
   return (
     <div className="list-group">
       <a className="list-group-item list-group-item-action">
-        Tuiter <i class="fa-brands fa-twitter"></i>
+        Tuiter <FontAwesomeIcon icon={faDove} />
       </a>
       <a
         className={`list-group-item ${isActive("home")} list-group-item-action`}
+        href="/tuiter/home"
       >
         Home
       </a>
@@ -17,6 +21,7 @@ const NavigationSidebar = ({ active = "home" }) => {
         className={`list-group-item ${isActive(
           "explore"
         )} list-group-item-action`}
+        href="/tuiter/explore"
       >
         Explore
       </a>

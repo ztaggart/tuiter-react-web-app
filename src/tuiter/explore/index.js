@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import PostSummaryList from "../post-summary-list";
 import "./index.css";
-const ExploreComponent = () => {
+const ExploreComponent = ({ setPage }) => {
+  useEffect(() => {
+    setPage("explore");
+  });
   return (
     <>
       <div className="row">
