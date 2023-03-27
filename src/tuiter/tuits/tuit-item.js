@@ -5,17 +5,17 @@ import {
   faCertificate,
   faComment,
   faArrowsRotate,
-  faHeart,
   faArrowUpFromBracket,
+  faThumbsDown,
 } from "@fortawesome/free-solid-svg-icons";
 import { useDispatch } from "react-redux";
-import { deleteTuit } from "./tuits-reducer";
+import { updateTuitThunk, deleteTuitThunk } from "../../services/tuits-thunks";
 
 const TuitItem = (props) => {
   const { tuit } = props;
   const dispatch = useDispatch();
   const deleteTuitHandler = (id) => {
-    dispatch(deleteTuit(id));
+    dispatch(deleteTuitThunk(id));
   };
 
   return (
@@ -36,7 +36,7 @@ const TuitItem = (props) => {
             {tuit.handle + " - " + tuit.time}
           </div>
           <div>{tuit.tuit}</div>
-          <div class="wd-bookmarked-post-icons">
+          <div className="wd-bookmarked-post-icons">
             <div>
               <FontAwesomeIcon icon={faComment} />
               {" " + tuit.replies}
@@ -46,11 +46,32 @@ const TuitItem = (props) => {
               {" " + tuit.retuits}
             </div>
             <div>
+              {tuit.likes}
+              <i
+                onClick={() => {
+                  dispatch(
+                    updateTuitThunk({
+                      ...tuit,
+                      likes: tuit.likes + 1,
+                    })
+                  );
+                }}
+                className="bi bi-heart-fill me-2 text-danger"
+              ></i>
+            </div>
+            <div>
+              {tuit.dislikes}
               <FontAwesomeIcon
-                icon={faHeart}
-                className={tuit.liked ? "text-danger" : ""}
+                onClick={() => {
+                  dispatch(
+                    updateTuitThunk({
+                      ...tuit,
+                      dislikes: tuit.dislikes + 1,
+                    })
+                  );
+                }}
+                icon={faThumbsDown}
               />
-              {" " + tuit.likes}
             </div>
             <div>
               <FontAwesomeIcon icon={faArrowUpFromBracket} />

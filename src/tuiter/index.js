@@ -11,7 +11,7 @@ import { configureStore } from "@reduxjs/toolkit";
 import { Provider } from "react-redux";
 import { Routes, Route } from "react-router";
 const store = configureStore({
-  reducer: { who: whoReducer, tuits: tuitsReducer, active: activeReducer },
+  reducer: { who: whoReducer, tuitsData: tuitsReducer, active: activeReducer },
 });
 
 function Tuiter() {
